@@ -8,7 +8,9 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 3,
-      "slots": ["A1+A2", "B1+B2"]
+      "slots": [
+        "A1+A2"
+      ]
     },
     {
       "course_code": "BCHY101P",
@@ -18,7 +20,9 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 2,
-      "slots": ["L1+L2", "L3+L4"]
+      "slots": [
+        "L1+L2"
+      ]
     },
     {
       "course_code": "BCSE101E",
@@ -28,7 +32,9 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 3,
-      "slots": ["C1+C2", "D1+D2"]
+      "slots": [
+        "C1+C2"
+      ]
     },
     {
       "course_code": "BCSE102L",
@@ -38,7 +44,9 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 4,
-      "slots": ["E1+E2", "F1+F2"]
+      "slots": [
+        "E1+E2"
+      ]
     },
     {
       "course_code": "BCSE102P",
@@ -48,17 +56,23 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 3,
-      "slots": ["L5+L6", "L7+L8"]
+      "slots": [
+        "L5+L6"
+      ]
     },
     {
       "course_code": "BCSE103E",
       "name": "Computer Programming: Java",
       "credits": 3,
       "type": "FC",
-      "prerequisites": ["BCSE102L"],
+      "prerequisites": [
+        "BCSE102L"
+      ],
       "year_level": 1,
       "difficulty": 4,
-      "slots": ["G1+G2", "H1+H2"]
+      "slots": [
+        "G1+G2"
+      ]
     },
     {
       "course_code": "BEEE102L",
@@ -68,7 +82,9 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 4,
-      "slots": ["A1+A2", "C1+C2"]
+      "slots": [
+        "A1+A2"
+      ]
     },
     {
       "course_code": "BEEE102P",
@@ -78,7 +94,9 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 2,
-      "slots": ["L9+L10", "L11+L12"]
+      "slots": [
+        "L9+L10"
+      ]
     },
     {
       "course_code": "BENG101L",
@@ -88,7 +106,9 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 2,
-      "slots": ["B1+B2", "D1+D2"]
+      "slots": [
+        "B1+B2"
+      ]
     },
     {
       "course_code": "BENG101P",
@@ -98,17 +118,23 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 1,
-      "slots": ["L13+L14", "L15+L16"]
+      "slots": [
+        "L13+L14"
+      ]
     },
     {
       "course_code": "BENG102P",
       "name": "Technical Report Writing",
       "credits": 1,
       "type": "FC",
-      "prerequisites": ["BENG101L"],
+      "prerequisites": [
+        "BENG101L"
+      ],
       "year_level": 1,
       "difficulty": 2,
-      "slots": ["L17+L18", "L19+L20"]
+      "slots": [
+        "L17+L18"
+      ]
     },
     {
       "course_code": "BMAT101L",
@@ -118,7 +144,9 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 5,
-      "slots": ["E1+E2", "G1+G2"]
+      "slots": [
+        "E1+E2"
+      ]
     },
     {
       "course_code": "BMAT101P",
@@ -128,27 +156,37 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 3,
-      "slots": ["L21+L22", "L23+L24"]
+      "slots": [
+        "L21+L22"
+      ]
     },
     {
       "course_code": "BMAT102L",
       "name": "Differential Equations and Transforms",
       "credits": 4,
       "type": "FC",
-      "prerequisites": ["BMAT101L"],
+      "prerequisites": [
+        "BMAT101L"
+      ],
       "year_level": 1,
       "difficulty": 5,
-      "slots": ["F1+F2", "H1+H2"]
+      "slots": [
+        "F1+F2"
+      ]
     },
     {
       "course_code": "BMAT201L",
       "name": "Complex Variables and Linear Algebra",
       "credits": 4,
       "type": "FC",
-      "prerequisites": ["BMAT101L"],
+      "prerequisites": [
+        "BMAT101L"
+      ],
       "year_level": 2,
       "difficulty": 5,
-      "slots": ["A1+A2", "C1+C2"]
+      "slots": [
+        "A1+A2"
+      ]
     },
     {
       "course_code": "BMAT202L",
@@ -158,7 +196,9 @@
       "prerequisites": [],
       "year_level": 2,
       "difficulty": 4,
-      "slots": ["B1+B2", "D1+D2"]
+      "slots": [
+        "B1+B2"
+      ]
     },
     {
       "course_code": "BMAT202P",
@@ -168,7 +208,9 @@
       "prerequisites": [],
       "year_level": 2,
       "difficulty": 2,
-      "slots": ["L25+L26", "L27+L28"]
+      "slots": [
+        "L25+L26"
+      ]
     },
     {
       "course_code": "BPHY101L",
@@ -178,7 +220,9 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 4,
-      "slots": ["E1+E2", "G1+G2"]
+      "slots": [
+        "E1+E2"
+      ]
     },
     {
       "course_code": "BPHY101P",
@@ -188,7 +232,9 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 2,
-      "slots": ["L29+L30", "L31+L32"]
+      "slots": [
+        "L29+L30"
+      ]
     },
     {
       "course_code": "BSTS101P",
@@ -198,7 +244,9 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 2,
-      "slots": ["L33+L34", "L35+L36"]
+      "slots": [
+        "L33+L34"
+      ]
     },
     {
       "course_code": "BSTS102P",
@@ -208,7 +256,9 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 2,
-      "slots": ["L37+L38", "L39+L40"]
+      "slots": [
+        "L37+L38"
+      ]
     },
     {
       "course_code": "BSTS201P",
@@ -218,7 +268,9 @@
       "prerequisites": [],
       "year_level": 2,
       "difficulty": 2,
-      "slots": ["L41+L42", "L43+L44"]
+      "slots": [
+        "L41+L42"
+      ]
     },
     {
       "course_code": "BSTS202P",
@@ -228,7 +280,9 @@
       "prerequisites": [],
       "year_level": 2,
       "difficulty": 2,
-      "slots": ["L45+L46", "L47+L48"]
+      "slots": [
+        "L45+L46"
+      ]
     },
     {
       "course_code": "BECE102L",
@@ -238,7 +292,9 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 4,
-      "slots": ["F1+F2", "H1+H2"]
+      "slots": [
+        "F1+F2"
+      ]
     },
     {
       "course_code": "BECE102P",
@@ -248,27 +304,37 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 3,
-      "slots": ["L49+L50", "L51+L52"]
+      "slots": [
+        "L49+L50"
+      ]
     },
     {
       "course_code": "BECE204L",
       "name": "Microprocessors and Microcontrollers",
       "credits": 3,
       "type": "DLES",
-      "prerequisites": ["BECE102L"],
+      "prerequisites": [
+        "BECE102L"
+      ],
       "year_level": 2,
       "difficulty": 5,
-      "slots": ["A1+A2", "C1+C2"]
+      "slots": [
+        "A1+A2"
+      ]
     },
     {
       "course_code": "BECE204P",
       "name": "Microprocessors and Microcontrollers Lab",
       "credits": 1,
       "type": "DLES",
-      "prerequisites": ["BECE102L"],
+      "prerequisites": [
+        "BECE102L"
+      ],
       "year_level": 2,
       "difficulty": 4,
-      "slots": ["L53+L54", "L55+L56"]
+      "slots": [
+        "L53+L54"
+      ]
     },
     {
       "course_code": "BMAT205L",
@@ -278,27 +344,37 @@
       "prerequisites": [],
       "year_level": 2,
       "difficulty": 5,
-      "slots": ["B1+B2", "D1+D2"]
+      "slots": [
+        "B1+B2"
+      ]
     },
     {
       "course_code": "BCSE202L",
       "name": "Data Structures and Algorithms",
       "credits": 3,
       "type": "DC",
-      "prerequisites": ["BCSE102L"],
+      "prerequisites": [
+        "BCSE102L"
+      ],
       "year_level": 2,
       "difficulty": 5,
-      "slots": ["E1+E2", "G1+G2"]
+      "slots": [
+        "E1+E2"
+      ]
     },
     {
       "course_code": "BCSE202P",
       "name": "Data Structures and Algorithms Lab",
       "credits": 1,
       "type": "DC",
-      "prerequisites": ["BCSE102L"],
+      "prerequisites": [
+        "BCSE102L"
+      ],
       "year_level": 2,
       "difficulty": 4,
-      "slots": ["L57+L58", "L59+L60"]
+      "slots": [
+        "L57+L58"
+      ]
     },
     {
       "course_code": "BCSE203E",
@@ -308,37 +384,51 @@
       "prerequisites": [],
       "year_level": 2,
       "difficulty": 3,
-      "slots": ["F1+F2", "H1+H2"]
+      "slots": [
+        "F1+F2"
+      ]
     },
     {
       "course_code": "BCSE204L",
       "name": "Design and Analysis of Algorithms",
       "credits": 3,
       "type": "DC",
-      "prerequisites": ["BCSE202L"],
+      "prerequisites": [
+        "BCSE202L"
+      ],
       "year_level": 2,
       "difficulty": 6,
-      "slots": ["A1+A2", "C1+C2"]
+      "slots": [
+        "A1+A2"
+      ]
     },
     {
       "course_code": "BCSE204P",
       "name": "Design and Analysis of Algorithms Lab",
       "credits": 1,
       "type": "DC",
-      "prerequisites": ["BCSE202L"],
+      "prerequisites": [
+        "BCSE202L"
+      ],
       "year_level": 2,
       "difficulty": 5,
-      "slots": ["L1+L2", "L3+L4"]
+      "slots": [
+        "L1+L2"
+      ]
     },
     {
       "course_code": "BCSE205L",
       "name": "Computer Architecture and Organization",
       "credits": 3,
       "type": "DC",
-      "prerequisites": ["BECE102L"],
+      "prerequisites": [
+        "BECE102L"
+      ],
       "year_level": 2,
       "difficulty": 5,
-      "slots": ["B1+B2", "D1+D2"]
+      "slots": [
+        "B1+B2"
+      ]
     },
     {
       "course_code": "BCSE301L",
@@ -348,7 +438,9 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 4,
-      "slots": ["E1+E2", "G1+G2"]
+      "slots": [
+        "E1+E2"
+      ]
     },
     {
       "course_code": "BCSE301P",
@@ -358,7 +450,9 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 3,
-      "slots": ["L5+L6", "L7+L8"]
+      "slots": [
+        "L5+L6"
+      ]
     },
     {
       "course_code": "BCSE302L",
@@ -368,7 +462,9 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 4,
-      "slots": ["F1+F2", "H1+H2"]
+      "slots": [
+        "F1+F2"
+      ]
     },
     {
       "course_code": "BCSE302P",
@@ -378,7 +474,9 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 3,
-      "slots": ["L9+L10", "L11+L12"]
+      "slots": [
+        "L9+L10"
+      ]
     },
     {
       "course_code": "BCSE303L",
@@ -388,7 +486,9 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 5,
-      "slots": ["A1+A2", "C1+C2"]
+      "slots": [
+        "A1+A2"
+      ]
     },
     {
       "course_code": "BCSE303P",
@@ -398,57 +498,79 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 4,
-      "slots": ["L13+L14", "L15+L16"]
+      "slots": [
+        "L13+L14"
+      ]
     },
     {
       "course_code": "BCSE304L",
       "name": "Theory of Computation",
       "credits": 3,
       "type": "DC",
-      "prerequisites": ["BMAT205L"],
+      "prerequisites": [
+        "BMAT205L"
+      ],
       "year_level": 3,
       "difficulty": 6,
-      "slots": ["B1+B2", "D1+D2"]
+      "slots": [
+        "B1+B2"
+      ]
     },
     {
       "course_code": "BCSE305L",
       "name": "Embedded Systems",
       "credits": 3,
       "type": "DC",
-      "prerequisites": ["BECE204L"],
+      "prerequisites": [
+        "BECE204L"
+      ],
       "year_level": 3,
       "difficulty": 5,
-      "slots": ["E1+E2", "G1+G2"]
+      "slots": [
+        "E1+E2"
+      ]
     },
     {
       "course_code": "BCSE306L",
       "name": "Artificial Intelligence",
       "credits": 3,
       "type": "DC",
-      "prerequisites": ["BCSE202L"],
+      "prerequisites": [
+        "BCSE202L"
+      ],
       "year_level": 3,
       "difficulty": 5,
-      "slots": ["F1+F2", "H1+H2"]
+      "slots": [
+        "F1+F2"
+      ]
     },
     {
       "course_code": "BCSE307L",
       "name": "Compiler Design",
       "credits": 3,
       "type": "DC",
-      "prerequisites": ["BCSE304L"],
+      "prerequisites": [
+        "BCSE304L"
+      ],
       "year_level": 3,
       "difficulty": 6,
-      "slots": ["A1+A2", "C1+C2"]
+      "slots": [
+        "A1+A2"
+      ]
     },
     {
       "course_code": "BCSE307P",
       "name": "Compiler Design Lab",
       "credits": 1,
       "type": "DC",
-      "prerequisites": ["BCSE304L"],
+      "prerequisites": [
+        "BCSE304L"
+      ],
       "year_level": 3,
       "difficulty": 5,
-      "slots": ["L17+L18", "L19+L20"]
+      "slots": [
+        "L17+L18"
+      ]
     },
     {
       "course_code": "BCSE308L",
@@ -458,7 +580,9 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 4,
-      "slots": ["B1+B2", "D1+D2"]
+      "slots": [
+        "B1+B2"
+      ]
     },
     {
       "course_code": "BCSE308P",
@@ -468,7 +592,9 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 3,
-      "slots": ["L21+L22", "L23+L24"]
+      "slots": [
+        "L21+L22"
+      ]
     },
     {
       "course_code": "BCSE309L",
@@ -478,7 +604,9 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 5,
-      "slots": ["E1+E2", "G1+G2"]
+      "slots": [
+        "E1+E2"
+      ]
     },
     {
       "course_code": "BCSE309P",
@@ -488,7 +616,9 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 4,
-      "slots": ["L25+L26", "L27+L28"]
+      "slots": [
+        "L25+L26"
+      ]
     },
     {
       "course_code": "BCSE206L",
@@ -498,47 +628,65 @@
       "prerequisites": [],
       "year_level": 2,
       "difficulty": 4,
-      "slots": ["F1+F2", "H1+H2"]
+      "slots": [
+        "F1+F2"
+      ]
     },
     {
       "course_code": "BCSE209L",
       "name": "Machine Learning",
       "credits": 3,
       "type": "DE",
-      "prerequisites": ["BMAT202L"],
+      "prerequisites": [
+        "BMAT202L"
+      ],
       "year_level": 2,
       "difficulty": 6,
-      "slots": ["A1+A2", "C1+C2"]
+      "slots": [
+        "A1+A2"
+      ]
     },
     {
       "course_code": "BCSE209P",
       "name": "Machine Learning Lab",
       "credits": 1,
       "type": "DE",
-      "prerequisites": ["BMAT202L"],
+      "prerequisites": [
+        "BMAT202L"
+      ],
       "year_level": 2,
       "difficulty": 5,
-      "slots": ["L29+L30", "L31+L32"]
+      "slots": [
+        "L29+L30"
+      ]
     },
     {
       "course_code": "BCSE332L",
       "name": "Deep Learning",
       "credits": 3,
       "type": "DE",
-      "prerequisites": ["BCSE209L"],
+      "prerequisites": [
+        "BCSE209L"
+      ],
       "year_level": 3,
       "difficulty": 7,
-      "slots": ["B1+B2", "D1+D2"]
+      "slots": [
+        "B1+B2"
+      ]
     },
     {
       "course_code": "BCSE332P",
       "name": "Deep Learning Lab",
       "credits": 1,
       "type": "DE",
-      "prerequisites": ["BCSE209L"],
+      "prerequisites": [
+        "BCSE209L"
+      ],
       "year_level": 3,
       "difficulty": 6,
-      "slots": ["L33+L34", "L35+L36"]
+      "slots": [
+        "L33+L34"
+      ]
     },
     {
       "course_code": "BCSE402L",
@@ -548,7 +696,9 @@
       "prerequisites": [],
       "year_level": 4,
       "difficulty": 5,
-      "slots": ["E1+E2", "G1+G2"]
+      "slots": [
+        "E1+E2"
+      ]
     },
     {
       "course_code": "BCSE408L",
@@ -558,17 +708,23 @@
       "prerequisites": [],
       "year_level": 4,
       "difficulty": 4,
-      "slots": ["F1+F2", "H1+H2"]
+      "slots": [
+        "F1+F2"
+      ]
     },
     {
       "course_code": "BCSE409L",
       "name": "Natural Language Processing",
       "credits": 3,
       "type": "DE",
-      "prerequisites": ["BCSE209L"],
+      "prerequisites": [
+        "BCSE209L"
+      ],
       "year_level": 4,
       "difficulty": 6,
-      "slots": ["A1+A2", "C1+C2"]
+      "slots": [
+        "A1+A2"
+      ]
     },
     {
       "course_code": "BCSE404L",
@@ -578,7 +734,9 @@
       "prerequisites": [],
       "year_level": 4,
       "difficulty": 3,
-      "slots": ["B1+B2"]
+      "slots": [
+        "B1+B2"
+      ]
     },
     {
       "course_code": "BCSE310L",
@@ -588,7 +746,9 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 4,
-      "slots": ["G1+G2"]
+      "slots": [
+        "E1+E2"
+      ]
     },
     {
       "course_code": "BCSE317L",
@@ -598,7 +758,9 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 4,
-      "slots": ["H1+H2"]
+      "slots": [
+        "F1+F2"
+      ]
     },
     {
       "course_code": "BCSE324L",
@@ -608,7 +770,9 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 5,
-      "slots": ["C1+C2"]
+      "slots": [
+        "A1+A2"
+      ]
     },
     {
       "course_code": "BCSE355L",
@@ -618,7 +782,9 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 4,
-      "slots": ["D1+D2"]
+      "slots": [
+        "B1+B2"
+      ]
     },
     {
       "course_code": "BHUM218L",
@@ -628,7 +794,9 @@
       "prerequisites": [],
       "year_level": 2,
       "difficulty": 3,
-      "slots": ["E1+E2"]
+      "slots": [
+        "E1+E2"
+      ]
     },
     {
       "course_code": "BMGT108L",
@@ -638,7 +806,9 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 2,
-      "slots": ["F1+F2"]
+      "slots": [
+        "F1+F2"
+      ]
     },
     {
       "course_code": "Proj1",
@@ -648,7 +818,9 @@
       "prerequisites": [],
       "year_level": 4,
       "difficulty": 2,
-      "slots": ["ANY"]
+      "slots": [
+        "ANY"
+      ]
     },
     {
       "course_code": "Proj2",
@@ -658,7 +830,9 @@
       "prerequisites": [],
       "year_level": 4,
       "difficulty": 4,
-      "slots": ["ANY"]
+      "slots": [
+        "ANY"
+      ]
     }
   ]
 }
