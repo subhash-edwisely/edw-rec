@@ -101,7 +101,7 @@ def render_catalog_page(all_courses: List[Course], student: StudentProfile,
     st.markdown("---")
     
     # Display courses with inline selection
-    st.subheader(f"Available Courses ({len(filtered_courses)})")
+    st.subheader(f"Available Courses in this year ({len(filtered_courses)}) (doesn't include pending courses of student)")
     
     if filtered_courses:
         # Create table data with selection checkboxes
