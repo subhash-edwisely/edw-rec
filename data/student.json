@@ -1,0 +1,362 @@
+{
+  "students": [
+    {
+      "student_id": "21BCE1234",
+      "name": "Rajesh Kumar",
+      "current_semester": 5,
+      "current_year": 3,
+      "interests": ["Artificial Intelligence", "Machine Learning", "Web Development"],
+      "workload_preference": "medium",
+      "total_credits_earned": 89,
+      "gpa": 7.82,
+      "semester_results": [
+        {
+          "semester": 1,
+          "courses": [
+            {"course_code": "BCHY101L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCHY101P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE101E", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE102L", "grade": "B+", "credits": 2, "status": "passed"},
+            {"course_code": "BCSE102P", "grade": "A", "credits": 2, "status": "passed"},
+            {"course_code": "BEEE102L", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BEEE102P", "grade": "B+", "credits": 1, "status": "passed"},
+            {"course_code": "BENG101L", "grade": "A", "credits": 2, "status": "passed"},
+            {"course_code": "BENG101P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BMAT101L", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BMAT101P", "grade": "B+", "credits": 1, "status": "passed"},
+            {"course_code": "BPHY101L", "grade": "B+", "credits": 3, "status": "passed"},
+            {"course_code": "BPHY101P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BSTS101P", "grade": "A", "credits": 1.5, "status": "passed"}
+          ]
+        },
+        {
+          "semester": 2,
+          "courses": [
+            {"course_code": "BCSE103E", "grade": "B+", "credits": 3, "status": "passed"},
+            {"course_code": "BECE102L", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BECE102P", "grade": "B+", "credits": 1, "status": "passed"},
+            {"course_code": "BENG102P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BMAT102L", "grade": "C", "credits": 4, "status": "passed"},
+            {"course_code": "BMAT201L", "grade": "F", "credits": 4, "status": "failed"},
+            {"course_code": "BMAT202L", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BMAT202P", "grade": "B+", "credits": 1, "status": "passed"},
+            {"course_code": "BSTS102P", "grade": "A", "credits": 1.5, "status": "passed"}
+          ]
+        },
+        {
+          "semester": 3,
+          "courses": [
+            {"course_code": "BCSE202L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE202P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE203E", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BECE204L", "grade": "B+", "credits": 3, "status": "passed"},
+            {"course_code": "BECE204P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BMAT205L", "grade": "B", "credits": 4, "status": "passed"},
+            {"course_code": "BCSE206L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BSTS201P", "grade": "A", "credits": 1.5, "status": "passed"},
+            {"course_code": "BHUM218L", "grade": "B+", "credits": 3, "status": "passed"}
+          ]
+        },
+        {
+          "semester": 4,
+          "courses": [
+            {"course_code": "BCSE204L", "grade": "B+", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE204P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE205L", "grade": "F", "credits": 3, "status": "failed"},
+            {"course_code": "BCSE209L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE209P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BSTS202P", "grade": "A", "credits": 1.5, "status": "passed"},
+            {"course_code": "BMGT108L", "grade": "B+", "credits": 3, "status": "passed"},
+            {"course_code": "BMAT201L", "grade": "B", "credits": 4, "status": "passed"}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "21BCE5678",
+      "name": "Priya Sharma",
+      "current_semester": 6,
+      "current_year": 3,
+      "interests": ["Data Science", "Cloud Computing", "Big Data"],
+      "workload_preference": "high",
+      "total_credits_earned": 112,
+      "gpa": 8.95,
+      "semester_results": [
+        {
+          "semester": 1,
+          "courses": [
+            {"course_code": "BCHY101L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCHY101P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE101E", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE102L", "grade": "A", "credits": 2, "status": "passed"},
+            {"course_code": "BCSE102P", "grade": "A", "credits": 2, "status": "passed"},
+            {"course_code": "BEEE102L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BEEE102P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BENG101L", "grade": "A", "credits": 2, "status": "passed"},
+            {"course_code": "BENG101P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BMAT101L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BMAT101P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BPHY101L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BPHY101P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BSTS101P", "grade": "A", "credits": 1.5, "status": "passed"}
+          ]
+        },
+        {
+          "semester": 2,
+          "courses": [
+            {"course_code": "BCSE103E", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BECE102L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BECE102P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BENG102P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BMAT102L", "grade": "A", "credits": 4, "status": "passed"},
+            {"course_code": "BMAT201L", "grade": "A", "credits": 4, "status": "passed"},
+            {"course_code": "BMAT202L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BMAT202P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BSTS102P", "grade": "A", "credits": 1.5, "status": "passed"}
+          ]
+        },
+        {
+          "semester": 3,
+          "courses": [
+            {"course_code": "BCSE202L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE202P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE203E", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BECE204L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BECE204P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BMAT205L", "grade": "A", "credits": 4, "status": "passed"},
+            {"course_code": "BCSE206L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BSTS201P", "grade": "A", "credits": 1.5, "status": "passed"},
+            {"course_code": "BHUM218L", "grade": "A", "credits": 3, "status": "passed"}
+          ]
+        },
+        {
+          "semester": 4,
+          "courses": [
+            {"course_code": "BCSE204L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE204P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE205L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE209L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE209P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BSTS202P", "grade": "A", "credits": 1.5, "status": "passed"},
+            {"course_code": "BMGT108L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE207L", "grade": "A", "credits": 2, "status": "passed"},
+            {"course_code": "BCSE207P", "grade": "A", "credits": 1, "status": "passed"}
+          ]
+        },
+        {
+          "semester": 5,
+          "courses": [
+            {"course_code": "BCSE301L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE301P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE302L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE302P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE303L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE303P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE208L", "grade": "A", "credits": 2, "status": "passed"},
+            {"course_code": "BCSE208P", "grade": "A", "credits": 1, "status": "passed"}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "21BCE9012",
+      "name": "Arjun Reddy",
+      "current_semester": 7,
+      "current_year": 4,
+      "interests": ["Cybersecurity", "Network Security", "Ethical Hacking"],
+      "workload_preference": "low",
+      "total_credits_earned": 128,
+      "gpa": 6.45,
+      "semester_results": [
+        {
+          "semester": 1,
+          "courses": [
+            {"course_code": "BCHY101L", "grade": "C", "credits": 3, "status": "passed"},
+            {"course_code": "BCHY101P", "grade": "B", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE101E", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE102L", "grade": "C", "credits": 2, "status": "passed"},
+            {"course_code": "BCSE102P", "grade": "B", "credits": 2, "status": "passed"},
+            {"course_code": "BEEE102L", "grade": "C", "credits": 3, "status": "passed"},
+            {"course_code": "BEEE102P", "grade": "B", "credits": 1, "status": "passed"},
+            {"course_code": "BENG101L", "grade": "B", "credits": 2, "status": "passed"},
+            {"course_code": "BENG101P", "grade": "B+", "credits": 1, "status": "passed"},
+            {"course_code": "BMAT101L", "grade": "D", "credits": 3, "status": "passed"},
+            {"course_code": "BMAT101P", "grade": "C", "credits": 1, "status": "passed"},
+            {"course_code": "BPHY101L", "grade": "C", "credits": 3, "status": "passed"},
+            {"course_code": "BPHY101P", "grade": "B", "credits": 1, "status": "passed"},
+            {"course_code": "BSTS101P", "grade": "B", "credits": 1.5, "status": "passed"}
+          ]
+        },
+        {
+          "semester": 2,
+          "courses": [
+            {"course_code": "BCSE103E", "grade": "C", "credits": 3, "status": "passed"},
+            {"course_code": "BECE102L", "grade": "D", "credits": 3, "status": "passed"},
+            {"course_code": "BECE102P", "grade": "C", "credits": 1, "status": "passed"},
+            {"course_code": "BENG102P", "grade": "B", "credits": 1, "status": "passed"},
+            {"course_code": "BMAT102L", "grade": "F", "credits": 4, "status": "failed"},
+            {"course_code": "BMAT201L", "grade": "F", "credits": 4, "status": "failed"},
+            {"course_code": "BMAT202L", "grade": "C", "credits": 3, "status": "passed"},
+            {"course_code": "BMAT202P", "grade": "B", "credits": 1, "status": "passed"},
+            {"course_code": "BSTS102P", "grade": "B+", "credits": 1.5, "status": "passed"}
+          ]
+        },
+        {
+          "semester": 3,
+          "courses": [
+            {"course_code": "BCSE202L", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE202P", "grade": "B+", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE203E", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BECE204L", "grade": "C", "credits": 3, "status": "passed"},
+            {"course_code": "BECE204P", "grade": "B", "credits": 1, "status": "passed"},
+            {"course_code": "BMAT205L", "grade": "C", "credits": 4, "status": "passed"},
+            {"course_code": "BCSE206L", "grade": "B+", "credits": 3, "status": "passed"},
+            {"course_code": "BSTS201P", "grade": "A", "credits": 1.5, "status": "passed"},
+            {"course_code": "BMAT102L", "grade": "C", "credits": 4, "status": "passed"}
+          ]
+        },
+        {
+          "semester": 4,
+          "courses": [
+            {"course_code": "BCSE204L", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE204P", "grade": "B+", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE205L", "grade": "F", "credits": 3, "status": "failed"},
+            {"course_code": "BCSE209L", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE209P", "grade": "B+", "credits": 1, "status": "passed"},
+            {"course_code": "BSTS202P", "grade": "A", "credits": 1.5, "status": "passed"},
+            {"course_code": "BMAT201L", "grade": "C", "credits": 4, "status": "passed"}
+          ]
+        },
+        {
+          "semester": 5,
+          "courses": [
+            {"course_code": "BCSE301L", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE301P", "grade": "B+", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE302L", "grade": "C", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE302P", "grade": "B", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE303L", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE303P", "grade": "B+", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE317L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE205L", "grade": "C", "credits": 3, "status": "passed"}
+          ]
+        },
+        {
+          "semester": 6,
+          "courses": [
+            {"course_code": "BCSE304L", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE305L", "grade": "C", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE306L", "grade": "F", "credits": 3, "status": "failed"},
+            {"course_code": "BCSE307L", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE307P", "grade": "B+", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE319L", "grade": "A", "credits": 2, "status": "passed"},
+            {"course_code": "BCSE319P", "grade": "A", "credits": 1, "status": "passed"}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "21BCE3456",
+      "name": "Ananya Iyer",
+      "current_semester": 3,
+      "current_year": 2,
+      "interests": ["Mobile Development", "IoT", "Embedded Systems"],
+      "workload_preference": "medium",
+      "total_credits_earned": 49,
+      "gpa": 8.12,
+      "semester_results": [
+        {
+          "semester": 1,
+          "courses": [
+            {"course_code": "BCHY101L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCHY101P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE101E", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE102L", "grade": "B+", "credits": 2, "status": "passed"},
+            {"course_code": "BCSE102P", "grade": "A", "credits": 2, "status": "passed"},
+            {"course_code": "BEEE102L", "grade": "B+", "credits": 3, "status": "passed"},
+            {"course_code": "BEEE102P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BENG101L", "grade": "A", "credits": 2, "status": "passed"},
+            {"course_code": "BENG101P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BMAT101L", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BMAT101P", "grade": "B+", "credits": 1, "status": "passed"},
+            {"course_code": "BPHY101L", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BPHY101P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BSTS101P", "grade": "A", "credits": 1.5, "status": "passed"}
+          ]
+        },
+        {
+          "semester": 2,
+          "courses": [
+            {"course_code": "BCSE103E", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BECE102L", "grade": "B+", "credits": 3, "status": "passed"},
+            {"course_code": "BECE102P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BENG102P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BMAT102L", "grade": "B", "credits": 4, "status": "passed"},
+            {"course_code": "BMAT201L", "grade": "B+", "credits": 4, "status": "passed"},
+            {"course_code": "BMAT202L", "grade": "B+", "credits": 3, "status": "passed"},
+            {"course_code": "BMAT202P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BSTS102P", "grade": "A", "credits": 1.5, "status": "passed"}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "21BCE7890",
+      "name": "Karthik Menon",
+      "current_semester": 4,
+      "current_year": 2,
+      "interests": ["Game Development", "Graphics Programming", "VR/AR"],
+      "workload_preference": "high",
+      "total_credits_earned": 71,
+      "gpa": 7.35,
+      "semester_results": [
+        {
+          "semester": 1,
+          "courses": [
+            {"course_code": "BCHY101L", "grade": "B+", "credits": 3, "status": "passed"},
+            {"course_code": "BCHY101P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE101E", "grade": "B+", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE102L", "grade": "B", "credits": 2, "status": "passed"},
+            {"course_code": "BCSE102P", "grade": "B+", "credits": 2, "status": "passed"},
+            {"course_code": "BEEE102L", "grade": "C", "credits": 3, "status": "passed"},
+            {"course_code": "BEEE102P", "grade": "B", "credits": 1, "status": "passed"},
+            {"course_code": "BENG101L", "grade": "A", "credits": 2, "status": "passed"},
+            {"course_code": "BENG101P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BMAT101L", "grade": "C", "credits": 3, "status": "passed"},
+            {"course_code": "BMAT101P", "grade": "B", "credits": 1, "status": "passed"},
+            {"course_code": "BPHY101L", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BPHY101P", "grade": "B+", "credits": 1, "status": "passed"},
+            {"course_code": "BSTS101P", "grade": "A", "credits": 1.5, "status": "passed"}
+          ]
+        },
+        {
+          "semester": 2,
+          "courses": [
+            {"course_code": "BCSE103E", "grade": "B+", "credits": 3, "status": "passed"},
+            {"course_code": "BECE102L", "grade": "C", "credits": 3, "status": "passed"},
+            {"course_code": "BECE102P", "grade": "B", "credits": 1, "status": "passed"},
+            {"course_code": "BENG102P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BMAT102L", "grade": "D", "credits": 4, "status": "passed"},
+            {"course_code": "BMAT201L", "grade": "F", "credits": 4, "status": "failed"},
+            {"course_code": "BMAT202L", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BMAT202P", "grade": "B+", "credits": 1, "status": "passed"},
+            {"course_code": "BSTS102P", "grade": "A", "credits": 1.5, "status": "passed"}
+          ]
+        },
+        {
+          "semester": 3,
+          "courses": [
+            {"course_code": "BCSE202L", "grade": "B+", "credits": 3, "status": "passed"},
+            {"course_code": "BCSE202P", "grade": "A", "credits": 1, "status": "passed"},
+            {"course_code": "BCSE203E", "grade": "A", "credits": 3, "status": "passed"},
+            {"course_code": "BECE204L", "grade": "B", "credits": 3, "status": "passed"},
+            {"course_code": "BECE204P", "grade": "B+", "credits": 1, "status": "passed"},
+            {"course_code": "BMAT205L", "grade": "C", "credits": 4, "status": "passed"},
+            {"course_code": "BCSE206L", "grade": "B+", "credits": 3, "status": "passed"},
+            {"course_code": "BSTS201P", "grade": "A", "credits": 1.5, "status": "passed"},
+            {"course_code": "BMAT201L", "grade": "C", "credits": 4, "status": "passed"}
+          ]
+        }
+      ]
+    }
+  ]
+}

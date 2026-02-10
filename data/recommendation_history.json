@@ -1,0 +1,772 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-02-10T06:08:27.192593",
+      "student_id": "21BCE1234",
+      "student_name": "Rajesh Kumar",
+      "semester": 5,
+      "gpa": 7.82,
+      "credits_earned": 89,
+      "preferences": {
+        "interests": [
+          "Game Development"
+        ],
+        "workload": "high",
+        "min_credits": 16,
+        "max_credits": 27,
+        "selected_courses": [
+          "BCSE308L",
+          "BCSE304L",
+          "BCSE332L",
+          "BCSE309L",
+          "BCSE301P",
+          "BCSE305L",
+          "BCSE308P",
+          "BCSE303L",
+          "BCSE332P",
+          "BCSE306L",
+          "BCSE310L",
+          "BCSE307L",
+          "BCSE355L",
+          "BCSE301L",
+          "BCSE317L",
+          "BCSE303P",
+          "BCSE309P",
+          "BCSE302P",
+          "BCSE307P",
+          "BCSE324L",
+          "BCSE302L"
+        ],
+        "deselected_courses": []
+      },
+      "recommendations": [
+        {
+          "rank": 1,
+          "strategy_name": "GRADUATION FOCUSED",
+          "courses": [
+            "BCSE205L",
+            "BCSE301L",
+            "BCSE303L",
+            "BCSE303P",
+            "BCSE302L",
+            "BCSE302P"
+          ],
+          "total_credits": 18,
+          "reasoning": "This strategy focuses on completing all mandatory courses and retaking the failed course to ensure prerequisites are met for future courses, thus securing graduation eligibility.",
+          "course_rationale": {
+            "BCSE205L": "Failed previously; retaking is essential for prerequisite clearance.",
+            "BCSE301L": "Mandatory DC course needed for graduation; no prerequisites required.",
+            "BCSE303L": "Key DC course that builds foundational knowledge critical for future courses.",
+            "BCSE303P": "Complements BCSE303L; practical insights into operating systems.",
+            "BCSE302L": "Essential for understanding database systems, which are crucial for software development.",
+            "BCSE302P": "Lab component that reinforces theoretical knowledge from BCSE302L."
+          },
+          "breakdown": {
+            "mandatory": [
+              "BCSE205L",
+              "BCSE301L",
+              "BCSE303L",
+              "BCSE303P",
+              "BCSE302L",
+              "BCSE302P"
+            ],
+            "electives": [],
+            "failed_courses_included": [
+              "BCSE205L"
+            ]
+          },
+          "graduation_impact": "Completing these courses will leave 18 mandatory credits for remaining 2 semesters (9 credits/sem needed).",
+          "suitability": "Best for students prioritizing graduation certainty.",
+          "slot_assignments": {
+            "BCSE205L": "B1+B2",
+            "BCSE301L": "E1+E2",
+            "BCSE303L": "A1+A2",
+            "BCSE303P": "L13+L14",
+            "BCSE302L": "F1+F2",
+            "BCSE302P": "L9+L10"
+          }
+        },
+        {
+          "rank": 2,
+          "strategy_name": "BALANCED APPROACH",
+          "courses": [
+            "BCSE205L",
+            "BCSE301L",
+            "BCSE303L",
+            "BCSE308L",
+            "BCSE308P",
+            "BCSE310L"
+          ],
+          "total_credits": 20,
+          "reasoning": "This approach combines mandatory courses with electives aligned with Rajesh's interests, balancing workload and skill development.",
+          "course_rationale": {
+            "BCSE205L": "Retaking to remove the backlog and meet prerequisites.",
+            "BCSE301L": "Core software engineering principles are essential for any software-related career.",
+            "BCSE303L": "Provides foundational knowledge in operating systems, crucial for game development.",
+            "BCSE308L": "Understanding networks is important for game development, especially for online multiplayer games.",
+            "BCSE308P": "Lab work provides practical experience in networking, enhancing the understanding gained in BCSE308L.",
+            "BCSE310L": "Elective that introduces IoT, which can be beneficial for innovative game development."
+          },
+          "breakdown": {
+            "mandatory": [
+              "BCSE205L",
+              "BCSE301L",
+              "BCSE303L",
+              "BCSE308L",
+              "BCSE308P"
+            ],
+            "electives": [
+              "BCSE310L"
+            ],
+            "failed_courses_included": [
+              "BCSE205L"
+            ]
+          },
+          "graduation_impact": "Completing these courses will leave 16 mandatory credits for remaining 2 semesters (8 credits/sem needed).",
+          "suitability": "Ideal for students looking to balance core courses with interest-driven electives.",
+          "slot_assignments": {
+            "BCSE205L": "B1+B2",
+            "BCSE301L": "E1+E2",
+            "BCSE303L": "A1+A2",
+            "BCSE308L": "D1+D2",
+            "BCSE308P": "L21+L22",
+            "BCSE310L": "G1+G2"
+          }
+        },
+        {
+          "rank": 3,
+          "strategy_name": "INTEREST ALIGNED",
+          "courses": [
+            "BCSE205L",
+            "BCSE301L",
+            "BCSE303L",
+            "BCSE306L",
+            "BCSE332L",
+            "BCSE332P"
+          ],
+          "total_credits": 23,
+          "reasoning": "This strategy emphasizes courses that align with game development interests while ensuring mandatory courses are kept on track.",
+          "course_rationale": {
+            "BCSE205L": "Retake to ensure prerequisites are cleared for future courses.",
+            "BCSE301L": "Essential for understanding software engineering processes, relevant to game development projects.",
+            "BCSE303L": "Critical for learning about operating systems, which are foundational for game engines.",
+            "BCSE306L": "Artificial Intelligence is a key component in game development for creating smart NPCs and game dynamics.",
+            "BCSE332L": "Deep Learning is an advanced topic that can be applied in creating sophisticated game AI.",
+            "BCSE332P": "Lab component of Deep Learning, providing hands-on experience which is crucial for understanding complex concepts."
+          },
+          "breakdown": {
+            "mandatory": [
+              "BCSE205L",
+              "BCSE301L",
+              "BCSE303L",
+              "BCSE306L"
+            ],
+            "electives": [
+              "BCSE332L",
+              "BCSE332P"
+            ],
+            "failed_courses_included": [
+              "BCSE205L"
+            ]
+          },
+          "graduation_impact": "Completing these courses will leave 13 mandatory credits for remaining 2 semesters (6.5 credits/sem needed).",
+          "suitability": "Best for students with a strong interest in game development and AI.",
+          "slot_assignments": {
+            "BCSE205L": "B1+B2",
+            "BCSE301L": "E1+E2",
+            "BCSE303L": "A1+A2",
+            "BCSE306L": "F1+F2",
+            "BCSE332L": "D1+D2",
+            "BCSE332P": "L33+L34"
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-10T06:56:32.601765",
+      "student_id": "21BCE3456",
+      "student_name": "Ananya Iyer",
+      "semester": 3,
+      "gpa": 8.12,
+      "credits_earned": 49,
+      "preferences": {
+        "interests": [
+          "Mobile Development",
+          "IoT",
+          "Embedded Systems"
+        ],
+        "workload": "medium",
+        "min_credits": 12,
+        "max_credits": 27,
+        "selected_courses": [
+          "BCSE202P",
+          "BCSE204P",
+          "BECE204P",
+          "BCSE205L",
+          "BCSE206L",
+          "BCSE209L",
+          "BECE204L",
+          "BCSE209P",
+          "BCSE204L",
+          "BMAT205L",
+          "BSTS201P",
+          "BCSE202L",
+          "BSTS202P",
+          "BHUM218L",
+          "BCSE203E"
+        ],
+        "deselected_courses": []
+      },
+      "recommendations": [
+        {
+          "rank": 3,
+          "strategy_name": "INTEREST ALIGNED",
+          "courses": [
+            "BECE204L",
+            "BECE204P",
+            "BCSE202L",
+            "BCSE202P",
+            "BCSE206L",
+            "BMGT108L"
+          ],
+          "total_credits": 14,
+          "reasoning": "This strategy prioritizes courses that align with Ananya's interests in IoT and Embedded Systems while also including a management elective to broaden skills that may be applicable in entrepreneurial ventures related to technology.",
+          "course_rationale": {
+            "BECE204L": "Key for foundational knowledge in embedded systems.",
+            "BECE204P": "Lab experience is critical to apply theoretical knowledge.",
+            "BCSE202L": "Core course necessary for all technical fields.",
+            "BCSE202P": "Lab ensures hands-on experience with data structures.",
+            "BCSE206L": "Foundations of Data Science is relevant for understanding data in IoT applications.",
+            "BMGT108L": "Entrepreneurship course provides skills for potential start-up initiatives in tech."
+          },
+          "breakdown": {
+            "mandatory": [
+              "BECE204L",
+              "BECE204P",
+              "BCSE202L",
+              "BCSE202P"
+            ],
+            "electives": [
+              "BCSE206L",
+              "BMGT108L"
+            ],
+            "failed_courses_included": [],
+            "project_courses": []
+          },
+          "graduation_impact": "Completing these courses will leave 11 mandatory credits for remaining 5 semesters (2.2 credits/sem needed).",
+          "suitability": "Best for students with strong interest in specialization and who can manage a higher workload.",
+          "slot_assignments": {
+            "BECE204L": "A1+A2",
+            "BECE204P": "L53+L54",
+            "BCSE202L": "E1+E2",
+            "BCSE202P": "L57+L58",
+            "BCSE206L": "F1+F2",
+            "BMGT108L": "H1+H2"
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-10T07:01:16.729772",
+      "student_id": "21BCE9012",
+      "student_name": "Arjun Reddy",
+      "semester": 7,
+      "gpa": 6.45,
+      "credits_earned": 128,
+      "preferences": {
+        "interests": [
+          "Cybersecurity",
+          "Network Security",
+          "Ethical Hacking"
+        ],
+        "workload": "low",
+        "min_credits": 12,
+        "max_credits": 27,
+        "selected_courses": [],
+        "deselected_courses": []
+      },
+      "recommendations": [
+        {
+          "rank": 1,
+          "strategy_name": "PROJECT + COMPLETION",
+          "courses": [
+            "Proj1",
+            "BCSE306L",
+            "BCSE308L",
+            "BCSE308P",
+            "BCSE309L",
+            "BCSE309P"
+          ],
+          "total_credits": 14,
+          "reasoning": "This strategy focuses on ensuring graduation by completing all mandatory courses and starting the required project work. It includes the failed course to maintain academic progress and avoid further delays.",
+          "course_rationale": {
+            "Proj1": "START OF PROJECT WORK - Essential to begin in Sem 7 to prepare for Proj2 in final semester.",
+            "BCSE306L": "Failed course that needs to be repeated to meet graduation requirements.",
+            "BCSE308L": "Mandatory course foundational for project work in network security.",
+            "BCSE308P": "Lab component of Computer Networks - complements theoretical knowledge.",
+            "BCSE309L": "Relevant to interests in Cybersecurity and Network Security.",
+            "BCSE309P": "Hands-on experience in Cryptography aligns with interests and career goals."
+          },
+          "breakdown": {
+            "mandatory": [
+              "BCSE306L",
+              "BCSE308L",
+              "BCSE308P",
+              "BCSE309L",
+              "BCSE309P"
+            ],
+            "electives": [],
+            "failed_courses_included": [
+              "BCSE306L"
+            ],
+            "project_courses": [
+              "Proj1"
+            ]
+          },
+          "graduation_impact": "Completing these courses will leave 18 mandatory credits for the remaining 1 semester (18 credits/sem needed).",
+          "suitability": "Best for students prioritizing project completion and graduation certainty.",
+          "slot_assignments": {
+            "Proj1": "ANY",
+            "BCSE306L": "F1+F2",
+            "BCSE308L": "B1+B2",
+            "BCSE308P": "L21+L22",
+            "BCSE309L": "E1+E2",
+            "BCSE309P": "L25+L26"
+          }
+        },
+        {
+          "rank": 2,
+          "strategy_name": "PROJECT + BALANCED",
+          "courses": [
+            "Proj1",
+            "BCSE306L",
+            "BCSE308L",
+            "BCSE309L",
+            "BCSE402L",
+            "BCSE355L"
+          ],
+          "total_credits": 18,
+          "reasoning": "This strategy balances between completing mandatory courses and exploring interest-aligned electives. It includes the failed course and targets a moderate workload.",
+          "course_rationale": {
+            "Proj1": "Initiating project work to avoid delays in the final semester.",
+            "BCSE306L": "Retake of failed course necessary for academic recovery.",
+            "BCSE308L": "Core subject relevant to networking, a key interest area.",
+            "BCSE309L": "Aligns with interests and strengthens network security knowledge.",
+            "BCSE402L": "Elective that offers data analysis skills beneficial for cybersecurity.",
+            "BCSE355L": "Develops cloud solutions skills which are complementary to cybersecurity."
+          },
+          "breakdown": {
+            "mandatory": [
+              "BCSE306L",
+              "BCSE308L",
+              "BCSE309L"
+            ],
+            "electives": [
+              "BCSE402L",
+              "BCSE355L"
+            ],
+            "failed_courses_included": [
+              "BCSE306L"
+            ],
+            "project_courses": [
+              "Proj1"
+            ]
+          },
+          "graduation_impact": "Completing these courses will leave 14 mandatory credits for the remaining 1 semester (14 credits/sem needed).",
+          "suitability": "Suits students seeking to balance core completion with skill development.",
+          "slot_assignments": {
+            "Proj1": "ANY",
+            "BCSE306L": "F1+F2",
+            "BCSE308L": "B1+B2",
+            "BCSE309L": "G1+G2",
+            "BCSE402L": "E1+E2",
+            "BCSE355L": "D1+D2"
+          }
+        },
+        {
+          "rank": 3,
+          "strategy_name": "PROJECT + SPECIALIZATION",
+          "courses": [
+            "Proj1",
+            "BCSE306L",
+            "BCSE308L",
+            "BCSE309L",
+            "BCSE309P",
+            "BCSE324L",
+            "BCSE332L"
+          ],
+          "total_credits": 22,
+          "reasoning": "This ambitious strategy focuses on specialization, targeting courses that align with Arjun's interests in cybersecurity, while still ensuring project initiation and covering mandatory requirements.",
+          "course_rationale": {
+            "Proj1": "Critical for project continuity into the final semester.",
+            "BCSE306L": "Necessary repeating of failed course to stay on track.",
+            "BCSE308L": "Fundamental course complementing network security specialization.",
+            "BCSE309L": "Key course for understanding cryptographic techniques.",
+            "BCSE309P": "Provides practical skills in network security.",
+            "BCSE324L": "Introduces blockchain, a cutting-edge area in cybersecurity.",
+            "BCSE332L": "Deepens understanding of AI, useful for ethical hacking."
+          },
+          "breakdown": {
+            "mandatory": [
+              "BCSE306L",
+              "BCSE308L",
+              "BCSE309L",
+              "BCSE309P"
+            ],
+            "electives": [
+              "BCSE324L",
+              "BCSE332L"
+            ],
+            "failed_courses_included": [
+              "BCSE306L"
+            ],
+            "project_courses": [
+              "Proj1"
+            ]
+          },
+          "graduation_impact": "Completing these courses will leave 10 mandatory credits for the remaining 1 semester (10 credits/sem needed).",
+          "suitability": "Ideal for students with a focus on deepening expertise in cybersecurity alongside project work.",
+          "slot_assignments": {
+            "Proj1": "ANY",
+            "BCSE306L": "F1+F2",
+            "BCSE308L": "B1+B2",
+            "BCSE309L": "E1+E2",
+            "BCSE309P": "L25+L26",
+            "BCSE324L": "A1+A2",
+            "BCSE332L": "D1+D2"
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-10T09:10:50.716726",
+      "student_id": "21BCE5678",
+      "student_name": "Priya Sharma",
+      "semester": 6,
+      "gpa": 8.95,
+      "credits_earned": 112,
+      "preferences": {
+        "interests": [
+          "Data Science",
+          "Cloud Computing",
+          "Big Data"
+        ],
+        "workload": "high",
+        "min_credits": 12,
+        "max_credits": 27,
+        "selected_courses": [
+          "BCSE307L",
+          "BCSE308L",
+          "BCSE309L",
+          "BCSE306L",
+          "BCSE332P",
+          "BCSE324L",
+          "BCSE332L",
+          "BCSE355L",
+          "BCSE309P",
+          "BCSE307P",
+          "BCSE305L",
+          "BCSE308P",
+          "BCSE310L",
+          "BCSE304L",
+          "BCSE317L"
+        ],
+        "deselected_courses": []
+      },
+      "recommendations": [
+        {
+          "rank": 1,
+          "strategy_name": "GRADUATION FOCUSED",
+          "courses": [
+            "BCSE304L",
+            "BCSE308L",
+            "BCSE308P",
+            "BCSE309L",
+            "BCSE309P"
+          ],
+          "total_credits": 14,
+          "reasoning": "This approach prioritizes completing the remaining mandatory courses to ensure graduation on time with minimal elective courses. This strategy is ideal for students who want to focus on fulfilling their degree requirements mainly.",
+          "course_rationale": {
+            "BCSE304L": "Theory of Computation is a mandatory course with a prerequisite satisfied, essential for understanding computation models.",
+            "BCSE308L": "Computer Networks is a foundational course with no prerequisites, necessary for understanding network protocols.",
+            "BCSE308P": "The lab complements the Computer Networks theory, providing hands-on experience.",
+            "BCSE309L": "Cryptography and Network Security is a vital course for understanding security aspects, without prerequisites.",
+            "BCSE309P": "The lab provides practical insights into Cryptography and Network Security concepts."
+          },
+          "breakdown": {
+            "mandatory": [
+              "BCSE304L",
+              "BCSE308L",
+              "BCSE308P",
+              "BCSE309L",
+              "BCSE309P"
+            ],
+            "electives": [],
+            "failed_courses_included": [],
+            "project_courses": []
+          },
+          "graduation_impact": "Completing these courses will leave 7 mandatory credits for remaining 2 semesters (3.5 credits/sem needed).",
+          "suitability": "Best for students prioritizing graduation certainty",
+          "slot_assignments": {
+            "BCSE304L": "B1+B2",
+            "BCSE308L": "D1+D2",
+            "BCSE308P": "L21+L22",
+            "BCSE309L": "E1+E2",
+            "BCSE309P": "L25+L26"
+          }
+        },
+        {
+          "rank": 2,
+          "strategy_name": "BALANCED APPROACH",
+          "courses": [
+            "BCSE304L",
+            "BCSE308L",
+            "BCSE308P",
+            "BCSE310L",
+            "BCSE332L"
+          ],
+          "total_credits": 17,
+          "reasoning": "This strategy balances mandatory courses with electives aligned to interests, allowing for steady progress while also exploring personal interests in emerging technologies.",
+          "course_rationale": {
+            "BCSE304L": "Theory of Computation is a mandatory course, essential for understanding computation models.",
+            "BCSE308L": "Computer Networks is a foundational course with no prerequisites, necessary for understanding network protocols.",
+            "BCSE308P": "The lab complements the Computer Networks theory, providing hands-on experience.",
+            "BCSE310L": "IoT Architectures and Protocols caters to interests while broadening knowledge in IoT.",
+            "BCSE332L": "Deep Learning aligns with interests in Data Science and provides advanced AI knowledge."
+          },
+          "breakdown": {
+            "mandatory": [
+              "BCSE304L",
+              "BCSE308L",
+              "BCSE308P"
+            ],
+            "electives": [
+              "BCSE310L",
+              "BCSE332L"
+            ],
+            "failed_courses_included": [],
+            "project_courses": []
+          },
+          "graduation_impact": "Completing these courses will leave 9 mandatory credits for remaining 2 semesters (4.5 credits/sem needed).",
+          "suitability": "Best for students seeking a blend of mandatory progress and personal interest exploration",
+          "slot_assignments": {
+            "BCSE304L": "B1+B2",
+            "BCSE308L": "D1+D2",
+            "BCSE308P": "L21+L22",
+            "BCSE310L": "E1+E2",
+            "BCSE332L": "B1+B2"
+          }
+        },
+        {
+          "rank": 3,
+          "strategy_name": "INTEREST ALIGNED",
+          "courses": [
+            "BCSE306L",
+            "BCSE332L",
+            "BCSE332P",
+            "BCSE355L",
+            "BCSE310L"
+          ],
+          "total_credits": 22,
+          "reasoning": "This approach focuses on electives that align closely with the student's interests in Data Science, Cloud Computing, and Big Data, while ensuring mandatory courses are not neglected.",
+          "course_rationale": {
+            "BCSE306L": "Artificial Intelligence is a mandatory course that aligns with interests in Data Science.",
+            "BCSE332L": "Deep Learning provides advanced AI and Data Science skills.",
+            "BCSE332P": "The lab complements Deep Learning theory with practical experience.",
+            "BCSE355L": "AWS Solutions Architect covers Cloud Computing, aligning with interests.",
+            "BCSE310L": "IoT Architectures and Protocols broadens knowledge in IoT, relevant to Big Data."
+          },
+          "breakdown": {
+            "mandatory": [
+              "BCSE306L"
+            ],
+            "electives": [
+              "BCSE332L",
+              "BCSE332P",
+              "BCSE355L",
+              "BCSE310L"
+            ],
+            "failed_courses_included": [],
+            "project_courses": []
+          },
+          "graduation_impact": "Completing these courses will leave 18 mandatory credits for remaining 2 semesters (9 credits/sem needed).",
+          "suitability": "Best for students with strong GPAs wanting specialization in areas of interest",
+          "slot_assignments": {
+            "BCSE306L": "F1+F2",
+            "BCSE332L": "B1+B2",
+            "BCSE332P": "L33+L34",
+            "BCSE355L": "D1+D2",
+            "BCSE310L": "E1+E2"
+          }
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-10T09:21:29.491476",
+      "student_id": "21BCE9012",
+      "student_name": "Arjun Reddy",
+      "semester": 7,
+      "gpa": 6.45,
+      "credits_earned": 128,
+      "preferences": {
+        "interests": [
+          "Cybersecurity",
+          "Network Security",
+          "Ethical Hacking",
+          "Web development"
+        ],
+        "workload": "high",
+        "min_credits": 12,
+        "max_credits": 27,
+        "selected_courses": [],
+        "deselected_courses": []
+      },
+      "recommendations": [
+        {
+          "rank": 1,
+          "strategy_name": "PROJECT + COMPLETION",
+          "courses": [
+            "Proj1",
+            "BCSE306L",
+            "BCSE308L",
+            "BCSE308P",
+            "BCSE309L",
+            "BCSE309P"
+          ],
+          "total_credits": 14,
+          "reasoning": "This approach ensures that Arjun completes the failed mandatory course and begins Project 1, which is crucial for timely graduation. The strategy includes all remaining mandatory courses, ensuring that he remains on track with core requirements while keeping the workload manageable.",
+          "course_rationale": {
+            "Proj1": "START OF PROJECT WORK - Essential to begin in Sem 7 to prepare for Proj2 in final semester",
+            "BCSE306L": "Retake of failed course to ensure all mandatory requirements are met",
+            "BCSE308L": "Core course in networking, aligns with interests and no prerequisites",
+            "BCSE308P": "Lab that complements Computer Networks theory, providing hands-on experience",
+            "BCSE309L": "Core course in security, aligns with interests and further strengthens foundational knowledge",
+            "BCSE309P": "Lab that complements Cryptography and Network Security, offering practical insights"
+          },
+          "breakdown": {
+            "mandatory": [
+              "BCSE308L",
+              "BCSE308P",
+              "BCSE309L",
+              "BCSE309P"
+            ],
+            "electives": [],
+            "failed_courses_included": [
+              "BCSE306L"
+            ],
+            "project_courses": [
+              "Proj1"
+            ]
+          },
+          "graduation_impact": "Completing these courses will leave 18 mandatory credits for the remaining 1 semester (18 credits/sem needed).",
+          "suitability": "Best for students prioritizing project completion and graduation certainty, especially given the GPA trend and need to retake a failed course.",
+          "slot_assignments": {
+            "BCSE306L": "F1+F2",
+            "BCSE308L": "B1+B2",
+            "BCSE308P": "L21+L22",
+            "BCSE309L": "E1+E2",
+            "BCSE309P": "L25+L26"
+          }
+        },
+        {
+          "rank": 2,
+          "strategy_name": "PROJECT + BALANCED",
+          "courses": [
+            "Proj1",
+            "BCSE306L",
+            "BCSE308L",
+            "BCSE309L",
+            "BCSE404L",
+            "BCSE408L"
+          ],
+          "total_credits": 18,
+          "reasoning": "This strategy provides a balance between completing mandatory courses and pursuing electives that align with Arjun's interests in web development and cloud computing, while also addressing the failed course. It ensures a balanced workload that fosters both core understanding and skill development.",
+          "course_rationale": {
+            "Proj1": "START OF PROJECT WORK - Essential to begin in Sem 7 to prepare for Proj2 in final semester",
+            "BCSE306L": "Retake of failed course to ensure all mandatory requirements are met",
+            "BCSE308L": "Foundational networking course important for cybersecurity interests",
+            "BCSE309L": "Key course in network security, directly aligned with interests",
+            "BCSE404L": "Elective aligning with web development interests, offering practical skills",
+            "BCSE408L": "Elective offering insights into cloud computing, a growing field relevant to cybersecurity"
+          },
+          "breakdown": {
+            "mandatory": [
+              "BCSE308L",
+              "BCSE309L"
+            ],
+            "electives": [
+              "BCSE404L",
+              "BCSE408L"
+            ],
+            "failed_courses_included": [
+              "BCSE306L"
+            ],
+            "project_courses": [
+              "Proj1"
+            ]
+          },
+          "graduation_impact": "Completing these courses will leave 14 mandatory credits for the remaining 1 semester (14 credits/sem needed).",
+          "suitability": "Ideal for students looking to maintain a balance between core courses and electives that develop new skills and interests.",
+          "slot_assignments": {
+            "BCSE306L": "F1+F2",
+            "BCSE308L": "B1+B2",
+            "BCSE309L": "E1+E2",
+            "BCSE404L": "D1+D2",
+            "BCSE408L": "H1+H2"
+          }
+        },
+        {
+          "rank": 3,
+          "strategy_name": "PROJECT + SPECIALIZATION",
+          "courses": [
+            "Proj1",
+            "BCSE306L",
+            "BCSE308L",
+            "BCSE309L",
+            "BCSE309P",
+            "BCSE324L",
+            "BCSE355L"
+          ],
+          "total_credits": 23,
+          "reasoning": "Focusing on specialization, this strategy includes courses that are directly aligned with Arjun's interests in cybersecurity and technology. While incorporating mandatory courses, it also allows exploring advanced topics like blockchain and AWS, enhancing expertise in specialized areas.",
+          "course_rationale": {
+            "Proj1": "START OF PROJECT WORK - Essential to begin in Sem 7 to prepare for Proj2 in final semester",
+            "BCSE306L": "Retake of failed course to ensure all mandatory requirements are met",
+            "BCSE308L": "Networking course foundational to cybersecurity interests",
+            "BCSE309L": "Core security course, essential for specialization in network security",
+            "BCSE309P": "Lab that complements Cryptography and Network Security, offering practical insights",
+            "BCSE324L": "Explores blockchain technology, expanding knowledge in a trending area of cybersecurity",
+            "BCSE355L": "Practical insights into AWS architecture, valuable for developing skills in cloud-based solutions"
+          },
+          "breakdown": {
+            "mandatory": [
+              "BCSE308L",
+              "BCSE309L",
+              "BCSE309P"
+            ],
+            "electives": [
+              "BCSE324L",
+              "BCSE355L"
+            ],
+            "failed_courses_included": [
+              "BCSE306L"
+            ],
+            "project_courses": [
+              "Proj1"
+            ]
+          },
+          "graduation_impact": "Completing these courses will leave 9 mandatory credits for the remaining 1 semester (9 credits/sem needed).",
+          "suitability": "Best for students aiming for deep specialization in their areas of interest while maintaining project work, suitable for those with a strong interest in pursuing careers in cybersecurity and technology.",
+          "slot_assignments": {
+            "BCSE306L": "F1+F2",
+            "BCSE308L": "B1+B2",
+            "BCSE309L": "E1+E2",
+            "BCSE309P": "L25+L26",
+            "BCSE324L": "A1+A2",
+            "BCSE355L": "D1+D2"
+          }
+        }
+      ]
+    }
+  ]
+}

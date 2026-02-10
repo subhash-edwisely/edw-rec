@@ -1,0 +1,664 @@
+{
+  "courses": [
+    {
+      "course_code": "BCHY101L",
+      "name": "Engineering Chemistry",
+      "credits": 3,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 3,
+      "slots": ["A1+A2", "B1+B2"]
+    },
+    {
+      "course_code": "BCHY101P",
+      "name": "Engineering Chemistry Lab",
+      "credits": 1,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 2,
+      "slots": ["L1+L2", "L3+L4"]
+    },
+    {
+      "course_code": "BCSE101E",
+      "name": "Computer Programming: Python",
+      "credits": 3,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 3,
+      "slots": ["C1+C2", "D1+D2"]
+    },
+    {
+      "course_code": "BCSE102L",
+      "name": "Structured and Object-Oriented Programming",
+      "credits": 2,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 4,
+      "slots": ["E1+E2", "F1+F2"]
+    },
+    {
+      "course_code": "BCSE102P",
+      "name": "Structured and Object-Oriented Programming Lab",
+      "credits": 2,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 3,
+      "slots": ["L5+L6", "L7+L8"]
+    },
+    {
+      "course_code": "BCSE103E",
+      "name": "Computer Programming: Java",
+      "credits": 3,
+      "type": "FC",
+      "prerequisites": ["BCSE102L"],
+      "year_level": 1,
+      "difficulty": 4,
+      "slots": ["G1+G2", "H1+H2"]
+    },
+    {
+      "course_code": "BEEE102L",
+      "name": "Basic Electrical and Electronics Engineering",
+      "credits": 3,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 4,
+      "slots": ["A1+A2", "C1+C2"]
+    },
+    {
+      "course_code": "BEEE102P",
+      "name": "Basic Electrical and Electronics Engineering Lab",
+      "credits": 1,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 2,
+      "slots": ["L9+L10", "L11+L12"]
+    },
+    {
+      "course_code": "BENG101L",
+      "name": "Technical English Communication",
+      "credits": 2,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 2,
+      "slots": ["B1+B2", "D1+D2"]
+    },
+    {
+      "course_code": "BENG101P",
+      "name": "Technical English Communication Lab",
+      "credits": 1,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 1,
+      "slots": ["L13+L14", "L15+L16"]
+    },
+    {
+      "course_code": "BENG102P",
+      "name": "Technical Report Writing",
+      "credits": 1,
+      "type": "FC",
+      "prerequisites": ["BENG101L"],
+      "year_level": 1,
+      "difficulty": 2,
+      "slots": ["L17+L18", "L19+L20"]
+    },
+    {
+      "course_code": "BMAT101L",
+      "name": "Calculus",
+      "credits": 3,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 5,
+      "slots": ["E1+E2", "G1+G2"]
+    },
+    {
+      "course_code": "BMAT101P",
+      "name": "Calculus Lab",
+      "credits": 1,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 3,
+      "slots": ["L21+L22", "L23+L24"]
+    },
+    {
+      "course_code": "BMAT102L",
+      "name": "Differential Equations and Transforms",
+      "credits": 4,
+      "type": "FC",
+      "prerequisites": ["BMAT101L"],
+      "year_level": 1,
+      "difficulty": 5,
+      "slots": ["F1+F2", "H1+H2"]
+    },
+    {
+      "course_code": "BMAT201L",
+      "name": "Complex Variables and Linear Algebra",
+      "credits": 4,
+      "type": "FC",
+      "prerequisites": ["BMAT101L"],
+      "year_level": 2,
+      "difficulty": 5,
+      "slots": ["A1+A2", "C1+C2"]
+    },
+    {
+      "course_code": "BMAT202L",
+      "name": "Probability and Statistics",
+      "credits": 3,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 2,
+      "difficulty": 4,
+      "slots": ["B1+B2", "D1+D2"]
+    },
+    {
+      "course_code": "BMAT202P",
+      "name": "Probability and Statistics Lab",
+      "credits": 1,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 2,
+      "difficulty": 2,
+      "slots": ["L25+L26", "L27+L28"]
+    },
+    {
+      "course_code": "BPHY101L",
+      "name": "Engineering Physics",
+      "credits": 3,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 4,
+      "slots": ["E1+E2", "G1+G2"]
+    },
+    {
+      "course_code": "BPHY101P",
+      "name": "Engineering Physics Lab",
+      "credits": 1,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 2,
+      "slots": ["L29+L30", "L31+L32"]
+    },
+    {
+      "course_code": "BSTS101P",
+      "name": "Quantitative Skills Practice I",
+      "credits": 1.5,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 2,
+      "slots": ["L33+L34", "L35+L36"]
+    },
+    {
+      "course_code": "BSTS102P",
+      "name": "Quantitative Skills Practice II",
+      "credits": 1.5,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 2,
+      "slots": ["L37+L38", "L39+L40"]
+    },
+    {
+      "course_code": "BSTS201P",
+      "name": "Qualitative Skills Practice I",
+      "credits": 1.5,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 2,
+      "difficulty": 2,
+      "slots": ["L41+L42", "L43+L44"]
+    },
+    {
+      "course_code": "BSTS202P",
+      "name": "Qualitative Skills Practice II",
+      "credits": 1.5,
+      "type": "FC",
+      "prerequisites": [],
+      "year_level": 2,
+      "difficulty": 2,
+      "slots": ["L45+L46", "L47+L48"]
+    },
+    {
+      "course_code": "BECE102L",
+      "name": "Digital Systems Design",
+      "credits": 3,
+      "type": "DLES",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 4,
+      "slots": ["F1+F2", "H1+H2"]
+    },
+    {
+      "course_code": "BECE102P",
+      "name": "Digital Systems Design Lab",
+      "credits": 1,
+      "type": "DLES",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 3,
+      "slots": ["L49+L50", "L51+L52"]
+    },
+    {
+      "course_code": "BECE204L",
+      "name": "Microprocessors and Microcontrollers",
+      "credits": 3,
+      "type": "DLES",
+      "prerequisites": ["BECE102L"],
+      "year_level": 2,
+      "difficulty": 5,
+      "slots": ["A1+A2", "C1+C2"]
+    },
+    {
+      "course_code": "BECE204P",
+      "name": "Microprocessors and Microcontrollers Lab",
+      "credits": 1,
+      "type": "DLES",
+      "prerequisites": ["BECE102L"],
+      "year_level": 2,
+      "difficulty": 4,
+      "slots": ["L53+L54", "L55+L56"]
+    },
+    {
+      "course_code": "BMAT205L",
+      "name": "Discrete Mathematics and Graph Theory",
+      "credits": 4,
+      "type": "DLES",
+      "prerequisites": [],
+      "year_level": 2,
+      "difficulty": 5,
+      "slots": ["B1+B2", "D1+D2"]
+    },
+    {
+      "course_code": "BCSE202L",
+      "name": "Data Structures and Algorithms",
+      "credits": 3,
+      "type": "DC",
+      "prerequisites": ["BCSE102L"],
+      "year_level": 2,
+      "difficulty": 5,
+      "slots": ["E1+E2", "G1+G2"]
+    },
+    {
+      "course_code": "BCSE202P",
+      "name": "Data Structures and Algorithms Lab",
+      "credits": 1,
+      "type": "DC",
+      "prerequisites": ["BCSE102L"],
+      "year_level": 2,
+      "difficulty": 4,
+      "slots": ["L57+L58", "L59+L60"]
+    },
+    {
+      "course_code": "BCSE203E",
+      "name": "Web Programming",
+      "credits": 3,
+      "type": "DC",
+      "prerequisites": [],
+      "year_level": 2,
+      "difficulty": 3,
+      "slots": ["F1+F2", "H1+H2"]
+    },
+    {
+      "course_code": "BCSE204L",
+      "name": "Design and Analysis of Algorithms",
+      "credits": 3,
+      "type": "DC",
+      "prerequisites": ["BCSE202L"],
+      "year_level": 2,
+      "difficulty": 6,
+      "slots": ["A1+A2", "C1+C2"]
+    },
+    {
+      "course_code": "BCSE204P",
+      "name": "Design and Analysis of Algorithms Lab",
+      "credits": 1,
+      "type": "DC",
+      "prerequisites": ["BCSE202L"],
+      "year_level": 2,
+      "difficulty": 5,
+      "slots": ["L1+L2", "L3+L4"]
+    },
+    {
+      "course_code": "BCSE205L",
+      "name": "Computer Architecture and Organization",
+      "credits": 3,
+      "type": "DC",
+      "prerequisites": ["BECE102L"],
+      "year_level": 2,
+      "difficulty": 5,
+      "slots": ["B1+B2", "D1+D2"]
+    },
+    {
+      "course_code": "BCSE301L",
+      "name": "Software Engineering",
+      "credits": 3,
+      "type": "DC",
+      "prerequisites": [],
+      "year_level": 3,
+      "difficulty": 4,
+      "slots": ["E1+E2", "G1+G2"]
+    },
+    {
+      "course_code": "BCSE301P",
+      "name": "Software Engineering Lab",
+      "credits": 1,
+      "type": "DC",
+      "prerequisites": [],
+      "year_level": 3,
+      "difficulty": 3,
+      "slots": ["L5+L6", "L7+L8"]
+    },
+    {
+      "course_code": "BCSE302L",
+      "name": "Database Systems",
+      "credits": 3,
+      "type": "DC",
+      "prerequisites": [],
+      "year_level": 3,
+      "difficulty": 4,
+      "slots": ["F1+F2", "H1+H2"]
+    },
+    {
+      "course_code": "BCSE302P",
+      "name": "Database Systems Lab",
+      "credits": 1,
+      "type": "DC",
+      "prerequisites": [],
+      "year_level": 3,
+      "difficulty": 3,
+      "slots": ["L9+L10", "L11+L12"]
+    },
+    {
+      "course_code": "BCSE303L",
+      "name": "Operating Systems",
+      "credits": 3,
+      "type": "DC",
+      "prerequisites": [],
+      "year_level": 3,
+      "difficulty": 5,
+      "slots": ["A1+A2", "C1+C2"]
+    },
+    {
+      "course_code": "BCSE303P",
+      "name": "Operating Systems Lab",
+      "credits": 1,
+      "type": "DC",
+      "prerequisites": [],
+      "year_level": 3,
+      "difficulty": 4,
+      "slots": ["L13+L14", "L15+L16"]
+    },
+    {
+      "course_code": "BCSE304L",
+      "name": "Theory of Computation",
+      "credits": 3,
+      "type": "DC",
+      "prerequisites": ["BMAT205L"],
+      "year_level": 3,
+      "difficulty": 6,
+      "slots": ["B1+B2", "D1+D2"]
+    },
+    {
+      "course_code": "BCSE305L",
+      "name": "Embedded Systems",
+      "credits": 3,
+      "type": "DC",
+      "prerequisites": ["BECE204L"],
+      "year_level": 3,
+      "difficulty": 5,
+      "slots": ["E1+E2", "G1+G2"]
+    },
+    {
+      "course_code": "BCSE306L",
+      "name": "Artificial Intelligence",
+      "credits": 3,
+      "type": "DC",
+      "prerequisites": ["BCSE202L"],
+      "year_level": 3,
+      "difficulty": 5,
+      "slots": ["F1+F2", "H1+H2"]
+    },
+    {
+      "course_code": "BCSE307L",
+      "name": "Compiler Design",
+      "credits": 3,
+      "type": "DC",
+      "prerequisites": ["BCSE304L"],
+      "year_level": 3,
+      "difficulty": 6,
+      "slots": ["A1+A2", "C1+C2"]
+    },
+    {
+      "course_code": "BCSE307P",
+      "name": "Compiler Design Lab",
+      "credits": 1,
+      "type": "DC",
+      "prerequisites": ["BCSE304L"],
+      "year_level": 3,
+      "difficulty": 5,
+      "slots": ["L17+L18", "L19+L20"]
+    },
+    {
+      "course_code": "BCSE308L",
+      "name": "Computer Networks",
+      "credits": 3,
+      "type": "DC",
+      "prerequisites": [],
+      "year_level": 3,
+      "difficulty": 4,
+      "slots": ["B1+B2", "D1+D2"]
+    },
+    {
+      "course_code": "BCSE308P",
+      "name": "Computer Networks Lab",
+      "credits": 1,
+      "type": "DC",
+      "prerequisites": [],
+      "year_level": 3,
+      "difficulty": 3,
+      "slots": ["L21+L22", "L23+L24"]
+    },
+    {
+      "course_code": "BCSE309L",
+      "name": "Cryptography and Network Security",
+      "credits": 3,
+      "type": "DC",
+      "prerequisites": [],
+      "year_level": 3,
+      "difficulty": 5,
+      "slots": ["E1+E2", "G1+G2"]
+    },
+    {
+      "course_code": "BCSE309P",
+      "name": "Cryptography and Network Security Lab",
+      "credits": 1,
+      "type": "DC",
+      "prerequisites": [],
+      "year_level": 3,
+      "difficulty": 4,
+      "slots": ["L25+L26", "L27+L28"]
+    },
+    {
+      "course_code": "BCSE206L",
+      "name": "Foundations of Data Science",
+      "credits": 3,
+      "type": "DE",
+      "prerequisites": [],
+      "year_level": 2,
+      "difficulty": 4,
+      "slots": ["F1+F2", "H1+H2"]
+    },
+    {
+      "course_code": "BCSE209L",
+      "name": "Machine Learning",
+      "credits": 3,
+      "type": "DE",
+      "prerequisites": ["BMAT202L"],
+      "year_level": 2,
+      "difficulty": 6,
+      "slots": ["A1+A2", "C1+C2"]
+    },
+    {
+      "course_code": "BCSE209P",
+      "name": "Machine Learning Lab",
+      "credits": 1,
+      "type": "DE",
+      "prerequisites": ["BMAT202L"],
+      "year_level": 2,
+      "difficulty": 5,
+      "slots": ["L29+L30", "L31+L32"]
+    },
+    {
+      "course_code": "BCSE332L",
+      "name": "Deep Learning",
+      "credits": 3,
+      "type": "DE",
+      "prerequisites": ["BCSE209L"],
+      "year_level": 3,
+      "difficulty": 7,
+      "slots": ["B1+B2", "D1+D2"]
+    },
+    {
+      "course_code": "BCSE332P",
+      "name": "Deep Learning Lab",
+      "credits": 1,
+      "type": "DE",
+      "prerequisites": ["BCSE209L"],
+      "year_level": 3,
+      "difficulty": 6,
+      "slots": ["L33+L34", "L35+L36"]
+    },
+    {
+      "course_code": "BCSE402L",
+      "name": "Big Data Analytics",
+      "credits": 3,
+      "type": "DE",
+      "prerequisites": [],
+      "year_level": 4,
+      "difficulty": 5,
+      "slots": ["E1+E2", "G1+G2"]
+    },
+    {
+      "course_code": "BCSE408L",
+      "name": "Cloud Computing",
+      "credits": 3,
+      "type": "DE",
+      "prerequisites": [],
+      "year_level": 4,
+      "difficulty": 4,
+      "slots": ["F1+F2", "H1+H2"]
+    },
+    {
+      "course_code": "BCSE409L",
+      "name": "Natural Language Processing",
+      "credits": 3,
+      "type": "DE",
+      "prerequisites": ["BCSE209L"],
+      "year_level": 4,
+      "difficulty": 6,
+      "slots": ["A1+A2", "C1+C2"]
+    },
+    {
+      "course_code": "BCSE404L",
+      "name": "Internet and Web Programming",
+      "credits": 3,
+      "type": "DE",
+      "prerequisites": [],
+      "year_level": 4,
+      "difficulty": 3,
+      "slots": ["B1+B2", "D1+D2"]
+    },
+    {
+      "course_code": "BCSE310L",
+      "name": "IoT Architectures and Protocols",
+      "credits": 3,
+      "type": "DE",
+      "prerequisites": [],
+      "year_level": 3,
+      "difficulty": 4,
+      "slots": ["E1+E2", "G1+G2"]
+    },
+    {
+      "course_code": "BCSE317L",
+      "name": "Information Security",
+      "credits": 3,
+      "type": "DE",
+      "prerequisites": [],
+      "year_level": 3,
+      "difficulty": 4,
+      "slots": ["F1+F2", "H1+H2"]
+    },
+    {
+      "course_code": "BCSE324L",
+      "name": "Foundations of Blockchain Technology",
+      "credits": 3,
+      "type": "DE",
+      "prerequisites": [],
+      "year_level": 3,
+      "difficulty": 5,
+      "slots": ["A1+A2", "C1+C2"]
+    },
+    {
+      "course_code": "BCSE355L",
+      "name": "AWS Solutions Architect",
+      "credits": 3,
+      "type": "OE",
+      "prerequisites": [],
+      "year_level": 3,
+      "difficulty": 4,
+      "slots": ["B1+B2", "D1+D2"]
+    },
+    {
+      "course_code": "BHUM218L",
+      "name": "Financial Management",
+      "credits": 3,
+      "type": "OE",
+      "prerequisites": [],
+      "year_level": 2,
+      "difficulty": 3,
+      "slots": ["E1+E2", "G1+G2"]
+    },
+    {
+      "course_code": "BMGT108L",
+      "name": "Entrepreneurship",
+      "credits": 3,
+      "type": "OE",
+      "prerequisites": [],
+      "year_level": 1,
+      "difficulty": 2,
+      "slots": ["F1+F2", "H1+H2"]
+    },
+    {
+      "course_code": "Proj1",
+      "name": "Project1",
+      "credits": 3,
+      "type": "PR",
+      "prerequisites": [],
+      "year_level": 4,
+      "difficulty": 2,
+      "slots": ["ANY"]
+    },
+    {
+      "course_code": "Proj2",
+      "name": "Project2",
+      "credits": 10,
+      "type": "PR",
+      "prerequisites": [],
+      "year_level": 4,
+      "difficulty": 4,
+      "slots": ["ANY"]
+    }
+  ]
+}
