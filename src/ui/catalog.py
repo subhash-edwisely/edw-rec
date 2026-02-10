@@ -29,9 +29,9 @@ def render_catalog_page(all_courses: List[Course], student: StudentProfile,
     with col1:
         type_filter = st.multiselect(
             "Course Type",
-            ["FC", "DLES", "DC", "DE", "OE"],
-            default=["DC", "DE", "OE"],
-            help="FC=Foundation, DC=Discipline Core, DE=Discipline Elective, OE=Open Elective"
+            ["FC", "DLES", "DC", "DE", "OE", "PR"],
+            default=["DC", "DE", "OE", "FC", "DLES", "PR"],
+            help="FC=Foundation, DC=Discipline Core, DE=Discipline Elective, OE=Open Elective, PR=Project"
         )
     
     with col2:

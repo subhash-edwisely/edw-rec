@@ -578,7 +578,7 @@
       "prerequisites": [],
       "year_level": 4,
       "difficulty": 3,
-      "slots": ["B1+B2", "D1+D2"]
+      "slots": ["B1+B2"]
     },
     {
       "course_code": "BCSE310L",
@@ -588,7 +588,7 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 4,
-      "slots": ["E1+E2", "G1+G2"]
+      "slots": ["G1+G2"]
     },
     {
       "course_code": "BCSE317L",
@@ -598,7 +598,7 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 4,
-      "slots": ["F1+F2", "H1+H2"]
+      "slots": ["H1+H2"]
     },
     {
       "course_code": "BCSE324L",
@@ -608,7 +608,7 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 5,
-      "slots": ["A1+A2", "C1+C2"]
+      "slots": ["C1+C2"]
     },
     {
       "course_code": "BCSE355L",
@@ -618,7 +618,7 @@
       "prerequisites": [],
       "year_level": 3,
       "difficulty": 4,
-      "slots": ["B1+B2", "D1+D2"]
+      "slots": ["D1+D2"]
     },
     {
       "course_code": "BHUM218L",
@@ -628,7 +628,7 @@
       "prerequisites": [],
       "year_level": 2,
       "difficulty": 3,
-      "slots": ["E1+E2", "G1+G2"]
+      "slots": ["E1+E2"]
     },
     {
       "course_code": "BMGT108L",
@@ -638,7 +638,7 @@
       "prerequisites": [],
       "year_level": 1,
       "difficulty": 2,
-      "slots": ["F1+F2", "H1+H2"]
+      "slots": ["F1+F2"]
     },
     {
       "course_code": "Proj1",

@@ -62,19 +62,18 @@ def render_profile_page(student: StudentProfile):
                     st.write(f"{idx}. {interest}")
         
         # Optional: Show common suggestions
-        with st.expander("💡 Common Interest Suggestions (click to add)"):
-            st.caption("Click to copy to your interests:")
+        with st.expander("💡 Common Interest Suggestions"):
+            st.caption("")
             suggestions = [
                 "Artificial Intelligence", "Machine Learning", "Deep Learning",
                 "Web Development", "Mobile Development", "Game Development",
                 "Data Science", "Data Analytics", "Big Data",
                 "Cybersecurity", "Ethical Hacking", "Network Security",
                 "Cloud Computing", "DevOps", "Kubernetes",
-                "Blockchain", "Cryptocurrency", "Smart Contracts",
+                "Blockchain", "Cryptocurrency",
                 "IoT", "Embedded Systems", "Robotics",
                 "Computer Vision", "Natural Language Processing",
-                "AR/VR", "Augmented Reality", "Virtual Reality",
-                "Quantum Computing", "Bioinformatics", "FinTech"
+                "AR/VR","Quantum Computing"
             ]
             
             # Display in a grid
@@ -84,7 +83,8 @@ def render_profile_page(student: StudentProfile):
                 with cols[col_idx]:
                     if st.button(f"+ {suggestion}", key=f"suggest_{idx}", use_container_width=True):
                         # This is just for display - user needs to manually add
-                        st.toast(f"Copy: {suggestion}", icon="📋")
+                        # st.toast(f"Copy: {suggestion}", icon="📋")
+                        pass
     
     with col2:
         st.subheader("⚙️ Workload Preference")

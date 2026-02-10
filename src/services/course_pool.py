@@ -25,32 +25,38 @@ class CoursePoolGenerator:
         
         passed = set(student.get_passed_courses())
         failed = set(student.get_failed_courses())
-        
+
         available = []
-        
+
         for course in self.all_courses:
+            # Hard gate: Proj1 only in sem 7, Proj2 only in sem 8
+            if course.course_code == 'Proj1' and student.current_semester != 7:
+                continue
+            if course.course_code == 'Proj2' and student.current_semester != 8:
+                continue
+
             # Skip if already passed
             if course.course_code in passed:
                 continue
-            
+
             # Skip if manually deselected
             if course.course_code in deselected_courses:
                 continue
-            
+
             # Include if manually selected
             if course.course_code in selected_courses:
                 available.append(course)
                 continue
-            
+
             # Include failed courses regardless of year
             if course.course_code in failed:
                 available.append(course)
                 continue
-            
+
             # Include courses from current year or below
             if course.year_level <= student.current_year:
                 available.append(course)
-        
+
         return available
     
     def check_prerequisites(self, course: Course, student: StudentProfile) -> tuple[bool, List[str]]:
@@ -72,7 +78,7 @@ class CoursePoolGenerator:
         mandatory = []
         
         for course in self.all_courses:
-            if course.type in ['DC', 'FC', 'DLES'] and course.course_code not in passed:
+            if course.type in ['DC', 'FC', 'DLES', 'PR'] and course.course_code not in passed:
                 mandatory.append(course)
         
         return mandatory

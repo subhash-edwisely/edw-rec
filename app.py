@@ -39,9 +39,9 @@ if 'custom_selection' not in st.session_state:
 if 'slot_assignments' not in st.session_state:
     st.session_state.slot_assignments = {}
 if 'min_credits' not in st.session_state:
-    st.session_state.min_credits = 16
+    st.session_state.min_credits = 12
 if 'max_credits' not in st.session_state:
-    st.session_state.max_credits = 27
+    st.session_state.max_credits = 24
 if 'show_final_pool' not in st.session_state:
     st.session_state.show_final_pool = False
 
@@ -173,7 +173,7 @@ st.sidebar.subheader("⚙️ Credit Limits")
 min_credits = st.sidebar.number_input(
     "Min Credits",
     min_value=12,
-    max_value=30,
+    max_value=24,
     value=st.session_state.min_credits,
     step=1,
     help="Minimum credits required per semester"
@@ -181,7 +181,7 @@ min_credits = st.sidebar.number_input(
 max_credits = st.sidebar.number_input(
     "Max Credits",
     min_value=12,
-    max_value=30,
+    max_value=24,
     value=st.session_state.max_credits,
     step=1,
     help="Maximum credits allowed per semester"

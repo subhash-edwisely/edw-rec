@@ -10,9 +10,9 @@ class LLMService:
     
     def __init__(self):
         self.client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
-        self.model = "gpt-4o"
+        self.model = "gpt-4.1"
     
-    def generate_recommendations(self, 
+    def generate_recommendations(self,
                                 student: StudentProfile,
                                 available_courses: List[Course],
                                 min_credits: int = 16,
@@ -20,89 +20,68 @@ class LLMService:
                                 future_semester: bool = False,
                                 assumed_passed: List[str] = None) -> Dict:
         """
-        Generate 3 ranked course recommendations
-        If future_semester=True and assumed_passed provided, simulate future semester
-        Special handling for semester 7 and 8 (project-focused)
+        Generate 3 ranked course recommendations using PromptBuilder.
+        Includes hard post-processing credit enforcement.
         """
-        # Determine student risk profile
-        risk_profile = self._assess_risk_profile(student)
-        
-        # Check if this is a project-critical semester (7 or 8)
+        from src.services.prompt_builder import PromptBuilder
+
         is_project_semester = student.current_semester >= 7
-        
-        # Build prompt
-        prompt = self._build_prompt(
+        prompt_builder = PromptBuilder()
+        prompt_data = prompt_builder.build_complete_prompt(
             student=student,
             available_courses=available_courses,
             min_credits=min_credits,
             max_credits=max_credits,
-            risk_profile=risk_profile,
             future_semester=future_semester,
             assumed_passed=assumed_passed,
             is_project_semester=is_project_semester
         )
-        
+
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
-                    {"role": "system", "content": "You are an expert academic advisor for VIT's FFCS system. You provide detailed, personalized course recommendations with clear reasoning."},
-                    {"role": "user", "content": prompt}
+                    {"role": "system", "content": prompt_data["system"]},
+                    {"role": "user", "content": prompt_data["user"]}
                 ],
                 temperature=0.7,
                 max_tokens=3000
             )
-            
-            # Parse response
+
             content = response.choices[0].message.content
-            
-            # Extract JSON from response
+
             try:
                 json_start = content.find('{')
                 json_end = content.rfind('}') + 1
                 if json_start != -1 and json_end > json_start:
-                    json_str = content[json_start:json_end]
-                    recommendations = json.loads(json_str)
+                    recommendations = json.loads(content[json_start:json_end])
                 else:
                     recommendations = json.loads(content)
-                
-                # CRITICAL: Validate and fix credit limits
+
                 if 'recommendations' in recommendations:
-                    valid_recs = []
+                    fixed_recs = []
                     for rec in recommendations['recommendations']:
-                        total = rec.get('total_credits', 0)
-                        
-                        # If credits are out of bounds, try to fix or skip
-                        if total < min_credits or total > max_credits:
-                            # Recalculate from courses
-                            course_codes = rec.get('courses', [])
-                            actual_courses = [c for c in available_courses if c.course_code in course_codes]
-                            actual_total = sum(c.credits for c in actual_courses)
-                            
-                            # If recalculated total is valid, update
-                            if min_credits <= actual_total <= max_credits:
-                                rec['total_credits'] = actual_total
-                                valid_recs.append(rec)
-                            # Otherwise skip this recommendation
-                        else:
-                            valid_recs.append(rec)
-                    
-                    # If we have at least one valid rec, use them
-                    if valid_recs:
-                        recommendations['recommendations'] = valid_recs
+                        rec = self._enforce_credit_limits(
+                            rec, available_courses, min_credits, max_credits,
+                            current_semester=student.current_semester
+                        )
+                        if rec is not None:
+                            fixed_recs.append(rec)
+
+                    if fixed_recs:
+                        recommendations['recommendations'] = fixed_recs
                     else:
-                        # All failed validation, use fallback
                         recommendations = self._create_fallback_recommendations(
                             available_courses, min_credits, max_credits, is_project_semester
                         )
-                
+
             except json.JSONDecodeError:
                 recommendations = self._create_fallback_recommendations(
                     available_courses, min_credits, max_credits, is_project_semester
                 )
-            
+
             return recommendations
-        
+
         except Exception as e:
             print(f"Error generating recommendations: {e}")
             return self._create_fallback_recommendations(
@@ -118,68 +97,118 @@ class LLMService:
                                     target_semester: int,
                                     previous_projections: List[Dict] = None) -> Dict:
         """
-        Generate future semester recommendations with cascading assumptions
-        For Sem 6: assumes Sem 5 courses passed
-        For Sem 7: assumes Sem 5 + Sem 6 courses passed
-        For Sem 8: assumes Sem 5 + Sem 6 + Sem 7 courses passed
+        Generate future semester recommendations with cascading assumptions.
+        For Sem N+1: assumes Sem N courses passed
+        For Sem N+2: assumes Sem N + Sem N+1 courses passed
+        etc.
         """
-        # Start with current recommendation
-        simulated_student = student
+        from src.services.prompt_builder import PromptBuilder
+
         assumed_completed = list(current_recommendation['courses'])
-        
-        # If we have previous projections, cascade through them
+
         if previous_projections:
             for proj in previous_projections:
                 if 'recommendations' in proj and len(proj['recommendations']) > 0:
-                    # Use the first (best) recommendation from each projected semester
                     best_proj = proj['recommendations'][0]
                     assumed_completed.extend(best_proj['courses'])
-        
-        # Simulate completion of all assumed courses
+
+        # Simulate completion AND set correct target semester on the student object
         simulated_student = self._simulate_cascading_completion(
-            student, assumed_completed, all_courses
+            student, assumed_completed, all_courses, target_semester
         )
-        
-        # Generate pool for target semester
+
+        # Build course pool for target semester
         passed = set(simulated_student.get_passed_courses())
-        failed = set(simulated_student.get_failed_courses())
-        
-        available = []
         target_year = (target_semester + 1) // 2
-        
+
+        available = []
         for course in all_courses:
             if course.course_code in passed:
                 continue
-            if course.course_code in failed:
-                available.append(course)
+            # Hard gate: Proj1 only in sem 7, Proj2 only in sem 8
+            if course.course_code == 'Proj1' and target_semester != 7:
+                continue
+            if course.course_code == 'Proj2' and target_semester != 8:
                 continue
             if course.year_level <= target_year:
                 available.append(course)
-        
-        # Generate recommendations for future semester
-        return self.generate_recommendations(
+
+        # Use PromptBuilder for enriched future-specific prompt
+        prompt_builder = PromptBuilder()
+        simulated_credits = simulated_student.total_credits_earned
+        prompt_data = prompt_builder.build_future_complete_prompt(
             student=simulated_student,
             available_courses=available,
             min_credits=min_credits,
             max_credits=max_credits,
-            future_semester=True,
-            assumed_passed=assumed_completed
+            target_semester=target_semester,
+            assumed_completed=assumed_completed,
+            simulated_credits=simulated_credits
         )
+
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=[
+                    {"role": "system", "content": prompt_data["system"]},
+                    {"role": "user", "content": prompt_data["user"]}
+                ],
+                temperature=0.7,
+                max_tokens=3000
+            )
+
+            content = response.choices[0].message.content
+
+            try:
+                json_start = content.find('{')
+                json_end = content.rfind('}') + 1
+                if json_start != -1 and json_end > json_start:
+                    recommendations = json.loads(content[json_start:json_end])
+                else:
+                    recommendations = json.loads(content)
+
+                if 'recommendations' in recommendations:
+                    fixed_recs = []
+                    for rec in recommendations['recommendations']:
+                        rec = self._enforce_credit_limits(
+                            rec, available, min_credits, max_credits,
+                            current_semester=target_semester
+                        )
+                        if rec is not None:
+                            fixed_recs.append(rec)
+
+                    if fixed_recs:
+                        recommendations['recommendations'] = fixed_recs
+                    else:
+                        recommendations = self._create_fallback_recommendations(
+                            available, min_credits, max_credits, target_semester >= 7
+                        )
+
+            except json.JSONDecodeError:
+                recommendations = self._create_fallback_recommendations(
+                    available, min_credits, max_credits, target_semester >= 7
+                )
+
+            return recommendations
+
+        except Exception as e:
+            print(f"Error generating future projections: {e}")
+            return self._create_fallback_recommendations(
+                available, min_credits, max_credits, target_semester >= 7
+            )
     
-    def _simulate_cascading_completion(self, student: StudentProfile, completed_courses: List[str], all_courses: List[Course]) -> StudentProfile:
+    def _simulate_cascading_completion(self, student: StudentProfile, completed_courses: List[str], all_courses: List[Course], target_semester: int = None) -> StudentProfile:
         """Simulate student profile after completing multiple semesters of courses"""
         import copy
         from src.models.student import SemesterResult, CourseResult
         
         simulated = copy.deepcopy(student)
         
-        # Add all completed courses
         course_map = {c.course_code: c for c in all_courses}
         new_credits = sum(course_map[code].credits for code in completed_courses if code in course_map)
         
         simulated.total_credits_earned += new_credits
         
-        # Add to semester results (group by current semester for simplicity)
         new_courses = [
             CourseResult(course_code=code, grade="A", credits=course_map[code].credits, status="passed")
             for code in completed_courses if code in course_map
@@ -189,6 +218,11 @@ class LLMService:
             simulated.semester_results.append(
                 SemesterResult(semester=student.current_semester, courses=new_courses)
             )
+        
+        # CRITICAL: update semester so prompts, risk checks, and project logic use correct values
+        if target_semester is not None:
+            simulated.current_semester = target_semester
+            simulated.current_year = (target_semester + 1) // 2
         
         return simulated
     
@@ -221,7 +255,7 @@ class LLMService:
                      min_credits: int, max_credits: int, risk_profile: str,
                      future_semester: bool, assumed_passed: List[str] = None,
                      is_project_semester: bool = False) -> str:
-        """Build the prompt for LLM with project semester awareness"""
+        """Build the prompt for LLM with project semester awareness. Maintain the conversation not as a third-person, but as if you are talking or suggesting that person."""
         
         # Format course pool with slots
         courses_data = []
@@ -294,6 +328,7 @@ FUTURE SEMESTER SIMULATION:
 - These courses are now prerequisites for advanced courses
 - Student's updated credits: {student.total_credits_earned}
 - Focus on: New courses unlocked + remaining mandatory courses
+- If the future semester is 8, then it is mandatory to include Project 2 and project 1 is a prerequisite for project 2.
 """
         
         prompt = f"""You are a course advisor for VIT's FFCS system. Provide 3 DIFFERENT strategic approaches for course selection.
@@ -398,7 +433,6 @@ OUTPUT FORMAT (JSON only, no markdown, no extra text):
         "failed_courses_included": [],
         {'"project_courses": ["Proj2"]' if student.current_semester == 8 else '"project_courses": ["Proj1"]' if student.current_semester == 7 else '"project_courses": []'}
       }},
-      "graduation_impact": "Completing these courses will leave X mandatory credits for remaining Y semesters (Z credits/sem needed). {'FINAL SEMESTER: After this, student will have earned W/160 credits.' if student.current_semester == 8 else ''}",
       "suitability": "Best for students prioritizing {'project completion and ' if is_project_semester else ''}graduation certainty"{',\n      "slot_assignments": {{"Proj2": "ANY", "BCSE301L": "A1+A2", "BCSE302L": "F1+F2"}}' if not future_semester and student.current_semester == 8 else ',\n      "slot_assignments": {{"BCSE301L": "A1+A2", "BCSE302L": "F1+F2", "BMAT301L": "C1+C2"}}' if not future_semester else ''}
     }},
     {{
@@ -409,7 +443,6 @@ OUTPUT FORMAT (JSON only, no markdown, no extra text):
       "reasoning": "...",
       "course_rationale": {{...}},
       "breakdown": {{...}},
-      "graduation_impact": "...",
       "suitability": "..."{',\n      "slot_assignments": {{...}}' if not future_semester else ''}
     }},
     {{
@@ -420,7 +453,6 @@ OUTPUT FORMAT (JSON only, no markdown, no extra text):
       "reasoning": "...",
       "course_rationale": {{...}},
       "breakdown": {{...}},
-      "graduation_impact": "...",
       "suitability": "..."{',\n      "slot_assignments": {{...}}' if not future_semester else ''}
     }}
   ]
@@ -429,6 +461,77 @@ OUTPUT FORMAT (JSON only, no markdown, no extra text):
         
         return prompt
     
+    def _enforce_credit_limits(self, rec: Dict, available_courses: List[Course],
+                               min_credits: int, max_credits: int,
+                               current_semester: int = None) -> Dict:
+        """
+        Hard-enforce credit limits on a single recommendation.
+        Also strips project courses that don't belong to the current semester.
+        """
+        course_map = {c.course_code: c for c in available_courses}
+
+        # Strip wrong project courses before any credit math
+        codes = rec.get('courses', [])
+        if current_semester is not None:
+            codes = [c for c in codes if not (c == 'Proj1' and current_semester != 7)]
+            codes = [c for c in codes if not (c == 'Proj2' and current_semester != 8)]
+        codes = [c for c in codes if c in course_map]
+
+        # Step 1: recalculate from real course objects
+        selected = [course_map[c] for c in codes]
+        total = sum(c.credits for c in selected)
+        rec['total_credits'] = total
+        rec['courses'] = codes
+
+        # Step 2: trim if over max — drop OE first, then DE, never drop DC/FC/DLES/PR
+        if total > max_credits:
+            priority_drop = ['OE', 'DE']
+            for drop_type in priority_drop:
+                for course in sorted(selected, key=lambda x: x.credits, reverse=True):
+                    if total <= max_credits:
+                        break
+                    if course.type == drop_type:
+                        selected.remove(course)
+                        total -= course.credits
+            rec['courses'] = [c.course_code for c in selected]
+            rec['total_credits'] = total
+
+        # Step 3: pad if under min — add mandatory first, then electives
+        if total < min_credits:
+            already_in = {c.course_code for c in selected}
+            candidates = sorted(
+                [c for c in available_courses if c.course_code not in already_in],
+                key=lambda x: (0 if x.type in ['DC', 'FC', 'DLES'] else 1, x.difficulty)
+            )
+            for course in candidates:
+                if total >= min_credits:
+                    break
+                if total + course.credits <= max_credits:
+                    selected.append(course)
+                    total += course.credits
+            rec['courses'] = [c.course_code for c in selected]
+            rec['total_credits'] = total
+
+        # Step 4: still out of bounds → discard
+        if not (min_credits <= total <= max_credits):
+            return None
+
+        # Sync breakdown to match adjusted course list
+        final_codes = set(rec['courses'])
+        if 'breakdown' in rec:
+            rec['breakdown']['mandatory'] = [
+                c for c in rec['breakdown'].get('mandatory', []) if c in final_codes
+            ]
+            rec['breakdown']['electives'] = [
+                c for c in rec['breakdown'].get('electives', []) if c in final_codes
+            ]
+            if 'project_courses' in rec['breakdown']:
+                rec['breakdown']['project_courses'] = [
+                    c for c in rec['breakdown'].get('project_courses', []) if c in final_codes
+                ]
+
+        return rec
+
     def _assess_risk_profile(self, student: StudentProfile) -> str:
         """Assess student's academic risk level"""
         failed = len(student.get_failed_courses())

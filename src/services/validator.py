@@ -5,7 +5,7 @@ from src.models.student import StudentProfile
 class Validator:
     """Validate course selections against constraints"""
     
-    def __init__(self, min_credits: int = 16, max_credits: int = 27):
+    def __init__(self, min_credits: int = 12, max_credits: int = 24):
         self.min_credits = min_credits
         self.max_credits = max_credits
     
